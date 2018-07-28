@@ -671,6 +671,133 @@ footer.entry-meta .meta-in {
 /*********************************************************************
 
 
+                                GALLERY
+
+
+**********************************************************************/
+#gallery .picbox {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+}
+/*#gallery .picbox:hover {
+  border: 1px solid #777;
+}*/
+
+.gallery img {
+  margin-bottom: -4px;
+}
+.gallery img .hover-shadow {
+  transition: 0.3s;
+}
+
+.gallery .hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+.gallery .picbox img {
+  width: 100%;
+  height: auto;
+}
+#gallery .desc {
+  padding: 15px;
+  text-align: center;
+}
+/* The Modal (background) */
+.gallery .modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+/* Modal Content */
+.gallery .modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+}
+
+/* The Close Button */
+.gallery .close {
+  color: white;
+  position: absolute;
+  top: 60px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.gallery .close:hover,
+.gallery .close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.gallery .mySlides {
+  display: none;
+}
+
+.gallery .cursor {
+  cursor: pointer;
+}
+
+
+/* Next & previous buttons */
+.gallery .prev,
+.gallery .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.gallery .next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.gallery .prev:hover,
+.gallery .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+
+.gallery .caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+
+
+/*********************************************************************
+
+
                                 COMMENTS
 
 
