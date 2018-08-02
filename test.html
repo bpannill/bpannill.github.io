@@ -20,6 +20,49 @@
 	<link rel="stylesheet" href="assets/css/styles.css">
 
 	<!--[if lt IE 9]> <script src="assets/js/html5shiv.js"></script> <![endif]-->
+
+<style>
+* {
+   
+/* Create two columns/boxes that floats next to each other */
+nav {
+    float: left;
+    width: 30%;
+    height: auto; /* only for demonstration, should be removed */
+    background: #ccc;
+    padding: 20px;
+}
+
+/* Style the list inside the menu */
+aside {
+    list-style-type: none;
+    padding: 0;
+}
+
+article {
+    float: left;
+    padding: 20px;
+    width: 70%;
+    background-color: #f1f1f1;
+    height: auto; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+    nav, article {
+        width: 100%;
+        height: auto;
+    }
+}
+</style>
+
 </head>
 <body id="poetry" class="contentpage">
 
@@ -88,10 +131,6 @@ There is no sign to this save love. </pre>
 </header>
 
 <main id="main">
-
-	<div class="container">
-
-		<div class="row topspace">
 			
 			<!-- Sidebar -->
 			<aside class="col-md-4 sidebar sidebar-left">
@@ -126,7 +165,7 @@ There is no sign to this save love. </pre>
 				
 				
 			<!-- Gallery -->
-			<section>
+			<article>
 				<div class="gallery">
 					<header class="page-header">
 						<h1 class="page-title">Poems</h1>
@@ -183,24 +222,8 @@ There is no sign to this save love. </pre>
 					  </div>
 					</div>
 				</div>
-			</section>	
-		<!-- </div> -->
+			</article>	
 
-
-			
-			<!-- /Gallery -->
-
-
-			
-
-		<!-- </div> <!- -->
-
-
-			<!-- /Article -->
-			
-
-		</div>
-	</div>	<!-- /container -->
 	
 </main>
 
